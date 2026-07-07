@@ -129,4 +129,4 @@ def chat():
             SESSIONS[session_id] = memory
         return jsonify({"status": "error", "message": f"فشل الاتصال: {str(e)}"}), 500
 
-# لا تستخدم app.run() هنا في بيئة Vercel
+# لا تضع app.run() هنا أبداً في Vercel
